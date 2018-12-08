@@ -1,5 +1,5 @@
+import re
 from collections import Counter
-import difflib
 
 
 with open(__file__[:-2]+"txt", "r") as f:
@@ -8,20 +8,31 @@ with open(__file__[:-2]+"txt", "r") as f:
 
 lines = list(lines)
 
-print(lines)
+# part 1
+fabric = dict()
 
-# def comp(a, b):
-#     pairs = list(zip(a,b))
-#     nd = sum([x != y for x, y in pairs])
-#     if nd == 1:
-#         common = [x if x == y else '' for x,y in pairs]
-#         print(''.join(common))
-#
-#
-#
-# for i in range(len(lines)):
-#     for j in range(len(lines)):
-#         if(i<j):
-#             comp(lines[i], lines[j])
+for line in lines:
+    (n, x, y, w, h) = map(int, re.match(r'#(\d+) @ (\d+),(\d+): (\d+)x(\d+)', line).groups())
+    for a in range(w):
+        for b in range (h):
+            p = (x+a, y+b)
+            fabric[p] = 'X' if p in fabric else '.'
+
+print(Counter(fabric.values()))
+
+# part 2
+def valid(fabric, x, y, w, h):
+    for a in range(w):
+        for b in range(h):
+            p = (x + a, y + b)
+            if fabric[p] == 'X':
+                return False
+    return True
+
+for line in lines:
+    (n, x, y, w, h) = map(int, re.match(r'#(\d+) @ (\d+),(\d+): (\d+)x(\d+)', line).groups())
+    if valid(fabric, x, y, w, h):
+        print("valid claim", n)
+
 
 
