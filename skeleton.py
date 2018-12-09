@@ -1,5 +1,5 @@
 with open(__file__[:-2]+"txt", "r") as f:
     lines = f.readlines()
-    lines = map(str.strip, lines)
+    lines = list(map(str.strip, lines))
 
-print(list(lines))
+print(lines)
