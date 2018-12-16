@@ -5,3 +5,4 @@
 21 players; last marble is worth 6111 points: high score is 54718
 30 players; last marble is worth 5807 points: high score is 37305
 491 players; last marble is worth 71058 points
+491 players; last marble is worth 7105800 points
