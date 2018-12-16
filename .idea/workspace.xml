@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2dd51f8-89d0-4592-b686-bbf700d6d4ca" name="Default" comment="9/pt1 done">
-      <change afterPath="$PROJECT_DIR$/day10.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day10.txt" afterDir="false" />
+    <list default="true" id="f2dd51f8-89d0-4592-b686-bbf700d6d4ca" name="Default" comment="day 11 pt 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day9.py" beforeDir="false" afterPath="$PROJECT_DIR$/day9.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day9.txt" beforeDir="false" afterPath="$PROJECT_DIR$/day9.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day11.py" beforeDir="false" afterPath="$PROJECT_DIR$/day11.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,11 +14,12 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/aoc2018$day5.coverage" NAME="day5 Coverage Results" MODIFIED="1544304569661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/aoc2018$day8.coverage" NAME="day8 Coverage Results" MODIFIED="1544379668733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/aoc2018$day10.coverage" NAME="day10 Coverage Results" MODIFIED="1544970319957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/aoc2018$day10.coverage" NAME="day10 Coverage Results" MODIFIED="1544971135463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/aoc2018$day2.coverage" NAME="day2 Coverage Results" MODIFIED="1544296089166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/aoc2018$day7.coverage" NAME="day7 Coverage Results" MODIFIED="1544374514283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/aoc2018$day9.coverage" NAME="day9 Coverage Results" MODIFIED="1544964637199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/aoc2018$day4.coverage" NAME="day4 Coverage Results" MODIFIED="1544301230060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/aoc2018$day11.coverage" NAME="day11 Coverage Results" MODIFIED="1544976111481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/aoc2018$day1.coverage" NAME="day1 Coverage Results" MODIFIED="1544273526312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/aoc2018$day3.coverage" NAME="day3 Coverage Results" MODIFIED="1544297114785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/aoc2018$day6.coverage" NAME="day6 Coverage Results" MODIFIED="1544361367034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -42,15 +40,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day4.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" lean-forward="true" selection-start-line="14" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/skeleton.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -121,7 +110,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/day10.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="296">
@@ -129,6 +118,15 @@
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/day11.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -194,6 +192,7 @@
         <option value="$PROJECT_DIR$/day9.py" />
         <option value="$PROJECT_DIR$/day10.txt" />
         <option value="$PROJECT_DIR$/day10.py" />
+        <option value="$PROJECT_DIR$/day11.py" />
       </list>
     </option>
   </component>
@@ -251,7 +250,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.day10">
+  <component name="RunManager" selected="Python.day11">
     <configuration name="day10" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="aoc2018" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -274,7 +273,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="day6" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="day11" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="aoc2018" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -287,7 +286,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day6.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day11.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -364,11 +363,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.day11" />
         <item itemvalue="Python.day10" />
         <item itemvalue="Python.day9" />
         <item itemvalue="Python.day8" />
         <item itemvalue="Python.day7" />
-        <item itemvalue="Python.day6" />
       </list>
     </recent_temporary>
   </component>
@@ -382,7 +381,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544270157077</updated>
-      <workItem from="1544270481963" duration="39187000" />
+      <workItem from="1544270481963" duration="44678000" />
     </task>
     <task id="LOCAL-00001" summary="day 1">
       <created>1544272796723</created>
@@ -447,15 +446,28 @@
       <option name="project" value="LOCAL" />
       <updated>1544381676707</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="day 10 done">
+      <created>1544970480503</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1544970480504</updated>
+    </task>
+    <task id="LOCAL-00011" summary="day 11 pt 1">
+      <created>1544973315998</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1544973315998</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39187000" />
+    <option name="totallyTimeSpent" value="44678000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="832" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -490,7 +502,9 @@
     <MESSAGE value="refactored part 1" />
     <MESSAGE value="day 8 finished" />
     <MESSAGE value="9/pt1 done" />
-    <option name="LAST_COMMIT_MESSAGE" value="9/pt1 done" />
+    <MESSAGE value="day 10 done" />
+    <MESSAGE value="day 11 pt 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 11 pt 1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -685,6 +699,13 @@
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day11.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
         </state>
       </provider>
     </entry>
