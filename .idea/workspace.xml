@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2dd51f8-89d0-4592-b686-bbf700d6d4ca" name="Default" comment="day 11 pt 1">
+    <list default="true" id="f2dd51f8-89d0-4592-b686-bbf700d6d4ca" name="Default" comment="day 11 pt 2 - very hacky but works">
+      <change afterPath="$PROJECT_DIR$/day12.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day12.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day11.py" beforeDir="false" afterPath="$PROJECT_DIR$/day11.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,9 +20,10 @@
     <SUITE FILE_PATH="coverage/aoc2018$day7.coverage" NAME="day7 Coverage Results" MODIFIED="1544374514283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/aoc2018$day9.coverage" NAME="day9 Coverage Results" MODIFIED="1544964637199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/aoc2018$day4.coverage" NAME="day4 Coverage Results" MODIFIED="1544301230060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/aoc2018$day11.coverage" NAME="day11 Coverage Results" MODIFIED="1544976111481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/aoc2018$day11.coverage" NAME="day11 Coverage Results" MODIFIED="1544976344018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/aoc2018$day1.coverage" NAME="day1 Coverage Results" MODIFIED="1544273526312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/aoc2018$day3.coverage" NAME="day3 Coverage Results" MODIFIED="1544297114785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/aoc2018$day12.coverage" NAME="day12 Coverage Results" MODIFIED="1544983420607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/aoc2018$day6.coverage" NAME="day6 Coverage Results" MODIFIED="1544361367034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
@@ -50,15 +52,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day7.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="100" column="48" selection-start-line="100" selection-start-column="48" selection-end-line="100" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/day7.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
@@ -67,15 +60,6 @@
                 <element signature="e#0#9#0" expanded="true" />
                 <element signature="e#46#107#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day8.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="28441" selection-start-column="28441" selection-end-column="28441" />
             </state>
           </provider>
         </entry>
@@ -113,7 +97,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/day10.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
+            <state relative-caret-position="1080">
               <caret line="72" column="12" selection-start-line="72" selection-start-column="12" selection-end-line="72" selection-end-column="12" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
@@ -122,11 +106,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/day11.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+            <state relative-caret-position="-304">
+              <caret line="47" column="42" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day12.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/day12.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
             </state>
           </provider>
         </entry>
@@ -193,6 +195,8 @@
         <option value="$PROJECT_DIR$/day10.txt" />
         <option value="$PROJECT_DIR$/day10.py" />
         <option value="$PROJECT_DIR$/day11.py" />
+        <option value="$PROJECT_DIR$/day12.txt" />
+        <option value="$PROJECT_DIR$/day12.py" />
       </list>
     </option>
   </component>
@@ -250,7 +254,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.day11">
+  <component name="RunManager" selected="Python.day12">
     <configuration name="day10" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="aoc2018" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -295,7 +299,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="day7" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="day12" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="aoc2018" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -308,7 +312,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day7.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day12.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -363,11 +367,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.day12" />
         <item itemvalue="Python.day11" />
         <item itemvalue="Python.day10" />
         <item itemvalue="Python.day9" />
         <item itemvalue="Python.day8" />
-        <item itemvalue="Python.day7" />
       </list>
     </recent_temporary>
   </component>
@@ -381,7 +385,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544270157077</updated>
-      <workItem from="1544270481963" duration="44678000" />
+      <workItem from="1544270481963" duration="47687000" />
     </task>
     <task id="LOCAL-00001" summary="day 1">
       <created>1544272796723</created>
@@ -460,14 +464,29 @@
       <option name="project" value="LOCAL" />
       <updated>1544973315998</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="day 11 pt 2 - very hacky but works">
+      <created>1544976250191</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1544976250191</updated>
+    </task>
+    <task id="LOCAL-00013" summary="day 11 pt 2 - very hacky but works">
+      <created>1544976525835</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1544976525835</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44678000" />
+    <option name="totallyTimeSpent" value="47687000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="832" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -504,7 +523,8 @@
     <MESSAGE value="9/pt1 done" />
     <MESSAGE value="day 10 done" />
     <MESSAGE value="day 11 pt 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="day 11 pt 1" />
+    <MESSAGE value="day 11 pt 2 - very hacky but works" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 11 pt 2 - very hacky but works" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -643,13 +663,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/skeleton.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/day7.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -692,9 +705,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/day12.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skeleton.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day11.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-304">
+          <caret line="47" column="42" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/day10.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
+        <state relative-caret-position="1080">
           <caret line="72" column="12" selection-start-line="72" selection-start-column="12" selection-end-line="72" selection-end-column="12" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
@@ -702,10 +736,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day11.py">
+    <entry file="file://$PROJECT_DIR$/day12.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+        <state relative-caret-position="209">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
     </entry>
