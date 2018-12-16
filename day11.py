@@ -45,8 +45,8 @@ class Grid(object):
         return max(sp)
 
     def max_square_any(self):
-        s = sorted([self.max_square_with_power(i) + tuple([i]) for i in range(3, 20)]) # heuristic of 20 as expected value of large squares tends to be negative
-        print(s)
+        # heuristic of 40 as expected max value of large squares tends to be negative as E(cell) = -0.5
+        s = sorted([self.max_square_with_power(i) + tuple([i]) for i in range(3, 40)])
         return s[-1]
 
 class GridTests(unittest.TestCase):
