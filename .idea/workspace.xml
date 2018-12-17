@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2dd51f8-89d0-4592-b686-bbf700d6d4ca" name="Default" comment="day 13 - meh - brute forced">
-      <change afterPath="$PROJECT_DIR$/day16.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day16.txt" afterDir="false" />
+    <list default="true" id="f2dd51f8-89d0-4592-b686-bbf700d6d4ca" name="Default" comment="day 16 - well that was fun!!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day16.py" beforeDir="false" afterPath="$PROJECT_DIR$/day16.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +19,7 @@
     <SUITE FILE_PATH="coverage/aoc2018$day3.coverage" NAME="day3 Coverage Results" MODIFIED="1544297114785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/aoc2018$day12.coverage" NAME="day12 Coverage Results" MODIFIED="1544996723337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/aoc2018$day6.coverage" NAME="day6 Coverage Results" MODIFIED="1544361367034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/aoc2018$day16.coverage" NAME="day16 Coverage Results" MODIFIED="1545011462266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/aoc2018$day16.coverage" NAME="day16 Coverage Results" MODIFIED="1545013108596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/aoc2018$day5.coverage" NAME="day5 Coverage Results" MODIFIED="1544304569661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/aoc2018$day8.coverage" NAME="day8 Coverage Results" MODIFIED="1544379668733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/aoc2018$day2.coverage" NAME="day2 Coverage Results" MODIFIED="1544296089166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -75,8 +74,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/day16.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="93" column="17" selection-start-line="93" selection-start-column="17" selection-end-line="93" selection-end-column="17" />
+            <state relative-caret-position="270">
+              <caret line="128" column="24" selection-start-line="128" selection-start-column="24" selection-end-line="128" selection-end-column="24" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -333,7 +332,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544270157077</updated>
-      <workItem from="1544270481963" duration="62963000" />
+      <workItem from="1544270481963" duration="64588000" />
     </task>
     <task id="LOCAL-00001" summary="day 1">
       <created>1544272796723</created>
@@ -454,14 +453,29 @@
       <option name="project" value="LOCAL" />
       <updated>1545005034903</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="day 16 - love the opcode magic - pt1">
+      <created>1545011493732</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1545011493732</updated>
+    </task>
+    <task id="LOCAL-00019" summary="day 16 - well that was fun!!">
+      <created>1545012927670</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1545012927670</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62963000" />
+    <option name="totallyTimeSpent" value="64588000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="832" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -503,7 +517,9 @@
     <MESSAGE value="day 12 - part 2" />
     <MESSAGE value="day 13 - part 1 done" />
     <MESSAGE value="day 13 - meh - brute forced" />
-    <option name="LAST_COMMIT_MESSAGE" value="day 13 - meh - brute forced" />
+    <MESSAGE value="day 16 - love the opcode magic - pt1" />
+    <MESSAGE value="day 16 - well that was fun!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 16 - well that was fun!!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -757,8 +773,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/day16.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="93" column="17" selection-start-line="93" selection-start-column="17" selection-end-line="93" selection-end-column="17" />
+        <state relative-caret-position="270">
+          <caret line="128" column="24" selection-start-line="128" selection-start-column="24" selection-end-line="128" selection-end-column="24" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>

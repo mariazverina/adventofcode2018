@@ -2,6 +2,8 @@ import re
 import operator
 
 samples = []
+
+# complex parsing for this exercise
 with open(__file__[:-2]+"txt", "r") as f:
     line = f.readline().strip()
     while len(line):
@@ -16,8 +18,7 @@ with open(__file__[:-2]+"txt", "r") as f:
     lines = f.readlines()
     lines = list(map(str.strip, lines))
 
-# print(lines)
-
+# ========== opcode definition ==============
 def opr(r, op, f):
     r[op[3]] = f(r[op[1]], r[op[2]])
 
@@ -78,15 +79,9 @@ def execute(r, op, instr):
     instr(r, op)
     return tuple(r)
 
-
-
-r = (3,2,1,1)
-expected = (3,2,2,1)
-op = (9,2,1,2)
-
+# part 1
 opcodes = [addr, addi, mulr, muli, banr, bani, borr, bori, setr, seti, gtir, gtri, gtrr, eqir, eqri, eqrr]
 
-# print(samples, len(samples))
 ops = {}
 n = 0
 for r, op, expected in samples:
@@ -101,6 +96,7 @@ for r, op, expected in samples:
 
 print("{} opcodes have 3+ matches".format(n))
 
+# part 2a - decipher opcodes
 final_ops = {}
 while len(ops):
     for k in sorted(ops.keys()):
@@ -115,23 +111,17 @@ while len(ops):
 
 print("func map", sorted(final_ops.items()))
 
+# part 2b - execute the program
 program = list(map(lambda x:list(map(int, x.split())), lines))
 
-# print(program)
-
-def exe(r, op):
-    global final_ops
-    f = final_ops[op[0]]
+def exe(r, op, opcode_map):
+    f = opcode_map[op[0]]
     f(r, op)
 
 r = [0, 0, 0, 0]
 
 for op in program:
-    exe(r, op)
+    exe(r, op, final_ops)
 
 print("final regs", r)
 
-
-# execute(r, op, mulr)
-# execute(r, op, addi)
-# execute(r, op, seti)
