@@ -21,8 +21,8 @@ class World:
         self.h = len(lines)
         self.w = len(lines[0])
         self.detect_carts()
-        self.collision = None
         self.t = 0
+        self.collided = False
 
     def detect_carts(self):
         self.carts = {}
@@ -46,6 +46,8 @@ class World:
     def tick(self):
 
         for (y,x), (c, mem) in self.sorted_carts():
+            if not (y, x) in self.carts: # cart may have been deleted
+                continue
             v = self.cart_offsets[c]
             ny, nx = y + v[0], x + v[1]
             road = world.tracks[ny][nx]
@@ -57,10 +59,14 @@ class World:
             del self.carts[(y, x)]
             if (ny, nx) in self.carts:
                 self.collision = (ny, nx)
-                print ("Collision: ", nx, ny)
-                return False
+                if not self.collided:
+                    print ("First collision: {},{}".format(nx, ny))
+                    self.collided = True
+                del self.carts[(ny, nx)]
             else:
                 self.carts[(ny, nx)] = c, mem
+
+        return len(self.carts) > 1
         # self.print()
 
         # print("T =", self.t)
@@ -70,10 +76,11 @@ class World:
 
 
 world = World(lines)
-world.print()
-print(world.sorted_carts())
 
 while world.tick():
     pass
 
-print(world.collision)
+y,x = next(iter(world.carts.keys()))
+print ("Last cart: {},{}".format(x, y))
+
+
