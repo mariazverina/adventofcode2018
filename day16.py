@@ -87,16 +87,49 @@ op = (9,2,1,2)
 opcodes = [addr, addi, mulr, muli, banr, bani, borr, bori, setr, seti, gtir, gtri, gtrr, eqir, eqri, eqrr]
 
 # print(samples, len(samples))
-
+ops = {}
 n = 0
 for r, op, expected in samples:
-    matches = sum([execute(r, op, f) == expected for f in opcodes])
-    if matches >= 3:
+    opcode = op[0]
+    matches = [f for f in opcodes if execute(r, op, f) == expected]
+    if len(matches) >= 3:
         n += 1
-
+    if opcode not in ops:
+        ops[opcode] = set(matches)
+    else:
+        ops[opcode] = set(matches).intersection(ops[opcode])
 
 print("{} opcodes have 3+ matches".format(n))
 
+final_ops = {}
+while len(ops):
+    for k in sorted(ops.keys()):
+        if len(ops[k]) == 1:
+            op = ops[k].pop()
+            final_ops[k] = op
+            del ops[k]
+            for v in ops.values():
+                if op in v:
+                    v.remove(op)
+
+
+print("func map", sorted(final_ops.items()))
+
+program = list(map(lambda x:list(map(int, x.split())), lines))
+
+# print(program)
+
+def exe(r, op):
+    global final_ops
+    f = final_ops[op[0]]
+    f(r, op)
+
+r = [0, 0, 0, 0]
+
+for op in program:
+    exe(r, op)
+
+print("final regs", r)
 
 
 # execute(r, op, mulr)
